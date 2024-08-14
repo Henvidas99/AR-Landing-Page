@@ -1,0 +1,54 @@
+.modules-section {
+  padding: 10px 20px;
+  background-color: #fdf7e0;
+  text-align: center;
+}
+
+.modules-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.modules-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: forestgreen;
+}
+
+.modules-section p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.carousel-container {
+  padding: 10px 20px 50px;
+  position: relative;
+}
+
+.module-carousel {
+  padding: 0 20px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-slide .module-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.swiper-slide .module-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000; 
+}

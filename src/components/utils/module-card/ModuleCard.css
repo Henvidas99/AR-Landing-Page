@@ -1,0 +1,26 @@
+.module-card {
+    height: 300px; 
+    margin: 0 auto;
+  }
+  
+  .module-card-img {
+    background-color: rgb(141, 186, 141);
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+  }
+  
+  .module-card-content {
+    padding: 15px;
+  }
+  
+  .module-card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .module-card-description {
+    font-size: 1rem;
+    color: #555;
+  }
+  

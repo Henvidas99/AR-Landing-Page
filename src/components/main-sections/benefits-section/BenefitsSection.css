@@ -1,0 +1,108 @@
+.benefits-section {
+  background-color: rgba(7, 50, 7, 0.7); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  height: auto; 
+}
+
+.ufo-content {
+  background-color: rgba(255, 255, 255, 0.911);
+  border-radius: 15px; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); 
+  padding: 20px; 
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  position: relative;
+}
+
+.title-container {
+  margin-bottom: 1em;
+}
+
+.benefits-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: forestgreen;
+  margin-bottom: 0.5em;
+}
+
+.benefits-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.benefit-item {
+  padding: 15px;
+  width: calc(20% - 10px); 
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.benefit-icon {
+  width: 130px;
+  height: auto;
+  margin-bottom: 10px;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
+}
+
+.benefit-item:nth-child(1) .benefit-icon {
+  transition-delay: 0.2s;
+}
+
+.benefit-item:nth-child(2) .benefit-icon {
+  transition-delay: 0.4s;
+}
+
+.benefit-item:nth-child(3) .benefit-icon {
+  transition-delay: 0.6s;
+}
+
+.benefit-item:nth-child(4) .benefit-icon {
+  transition-delay: 0.8s;
+}
+
+.benefit-item:nth-child(5) .benefit-icon {
+  transition-delay: 1s;
+}
+
+.benefit-icon.visible {
+  opacity: 1;
+  transform: scale(1);
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5)); 
+}
+
+.benefit-item-text {
+  display: block;
+  font-size: 1rem;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .benefit-item {
+    width: calc(33.333% - 10px); 
+  }
+}
+
+@media (max-width: 480px) {
+  .title-container {
+    margin-top: 2em;
+  }
+
+  .benefits-title {
+    font-size: 1.8rem;
+  }
+
+  .benefit-item {
+    width: calc(50% - 10px); 
+  }
+}
