@@ -86,8 +86,8 @@ const Header = () => {
             </li>
           </ul>
           <div className="navbar-buttons">
-            <a href="http://localhost:3000/login" className="btn btn-primary">Iniciar Sesión</a>
-            <a href="http://localhost:3000/verify-email" className="btn btn-secondary">Registrarse</a>
+            <a href="http://localhost:3001/login" className="btn btn-primary">Iniciar Sesión</a>
+            <a href="http://localhost:3001/verify-email" className="btn btn-secondary">Registrarse</a>
           </div>
         </div>
         <div className="navbar-toggle" onClick={toggleMenu}>

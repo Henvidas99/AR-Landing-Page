@@ -1,13 +1,15 @@
-
 import React from 'react';
 import './DownloadSection.css';
-import androidIcon from '../../../assets/images/android1.png'; 
-import iosIcon from '../../../assets/images/ios.png'; 
+import androidIcon from '../../../assets/images/android1.png';
+import iosIcon from '../../../assets/images/ios.png';
+import phoneImageLeft from '../../../assets/images/mobile3.png'; // Imagen del teléfono izquierdo
+import phoneImageRight from '../../../assets/images/mobile4.png'; // Imagen del teléfono derecho
 
 const DownloadSection = () => {
-
   return (
-    <section id ="download" className="download-section">
+    <section id="download" className="download-section">
+      <img src={phoneImageLeft} alt="Teléfono izquierdo" className="phone-image phone-image-left" />
+      <img src={phoneImageRight} alt="Teléfono derecho" className="phone-image phone-image-right" />
       <div className="download-content">
         <h2 className="download-title">¡Descarga Nuestra Aplicación!</h2>
         <p className="download-description">

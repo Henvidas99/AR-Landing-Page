@@ -2,6 +2,7 @@
 #explore .container h2 {
   font-size: 2rem;
   color: forestgreen;
+  
 }
 
 #explore .container p {
@@ -144,4 +145,31 @@
   .brokers-gallery img {
     height: 120px; 
   }
+}
+
+/* Animaciones de deslizamiento hacia arriba */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Clase para aplicar animación */
+.visible {
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+/* Inicialmente ocultar los elementos para la animación */
+.explore-properties-brokers-section h2,
+.explore-properties-brokers-section p,
+.explore-properties-brokers-section .properties-section,
+.explore-properties-brokers-section .brokers-section,
+.explore-properties-brokers-section .property-carousel,
+.explore-properties-brokers-section .map-section {
+  opacity: 0; /* Oculto para la animación */
 }

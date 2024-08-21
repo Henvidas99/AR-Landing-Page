@@ -8,27 +8,27 @@ import serviceIcon from '../../../assets/images/client-service.png';
 
 const benefits = [
   {
-    title: 'Eficiencia operativa',
+    title: 'Eficiencia Operativa',
     description: 'Automatiza y optimiza procesos clave.',
     icon: efficiencyIcon
   },
   {
-    title: 'Seguridad de la información',
+    title: 'Seguridad de la Información',
     description: 'Protege datos sensibles y transacciones.',
     icon: securityIcon
   },
   {
-    title: 'Facilita la toma de decisiones',
+    title: 'Mejor Toma de Decisiones',
     description: 'Herramientas de análisis y reportes en tiempo real.',
     icon: decisionIcon
   },
   {
-    title: 'Mejora la comunicación y colaboración',
+    title: 'Comunicación Efectiva',
     description: 'Facilita la coordinación entre brokers.',
     icon: communicationIcon
   },
   {
-    title: 'Mejor servicio al cliente',
+    title: 'Mejor Servicio al Cliente',
     description: 'Gestión ágil y eficiente de propiedades.',
     icon: serviceIcon
   }
@@ -36,7 +36,7 @@ const benefits = [
 
 const BenefitsSection = () => {
   useEffect(() => {
-    const icons = document.querySelectorAll('.benefit-icon');
+    const icons = document.querySelectorAll('.benefit-icon, .benefits-title');
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -64,7 +64,7 @@ const BenefitsSection = () => {
     <section id="benefits" className="benefits-section">
       <div className="ufo-content">
         <div className="title-container">
-          <h2 className="benefits-title">Beneficios</h2>
+          <h3 className="benefits-title">Nuestros Beneficios</h3>
         </div>
         <div className="benefits-list">
           {benefits.map((benefit, index) => (

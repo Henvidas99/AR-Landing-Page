@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './ExploreSection.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
@@ -67,6 +67,7 @@ const properties = [
     images: [propiedad6Img, img13]
   }
 ];
+ 
 
 const ExploreSection = () => {
   const [selectedProperty, setSelectedProperty] = useState(null);
@@ -81,6 +82,31 @@ const ExploreSection = () => {
     setModalIsOpen(false);
     setSelectedProperty(null);
   };
+
+  useEffect(() => {
+    const icons = document.querySelectorAll('.explore-properties-brokers-section h2, .explore-properties-brokers-section p, .explore-properties-brokers-section .properties-section, .explore-properties-brokers-section .brokers-section, .explore-properties-brokers-section .property-carousel, .explore-properties-brokers-section .map-section');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.5
+    });
+
+    icons.forEach(icon => {
+      observer.observe(icon);
+    });
+
+    return () => {
+      // Clean up the observer on unmount
+      icons.forEach(icon => {
+        observer.unobserve(icon);
+      });
+    };
+  }, []);
 
   return (
     <section id="explore" className="explore-properties-brokers-section">

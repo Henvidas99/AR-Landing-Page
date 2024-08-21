@@ -1,19 +1,18 @@
 .benefits-section {
-  background-color: rgba(7, 50, 7, 0.7); 
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2em;
-  height: auto; 
+  height: auto;
+  background-color: whitesmoke;
+  position: relative; /* Necesario para aplicar el box-shadow de manera efectiva */
 }
 
+
 .ufo-content {
-  background-color: rgba(255, 255, 255, 0.911);
-  border-radius: 15px; 
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); 
-  padding: 20px; 
+  background-color: rgb(237, 237, 237); /* Color de fondo más claro para el contenido */
   width: 100%;
-  max-width: 1200px;
+  height: 400px;
+  padding: 20px;
   text-align: center;
   position: relative;
 }
@@ -23,31 +22,41 @@
 }
 
 .benefits-title {
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 20px;
   color: forestgreen;
-  margin-bottom: 0.5em;
+  opacity: 0; /* Inicialmente oculto */
+  transform: translateY(20px); /* Inicialmente desplazado hacia abajo */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .benefits-list {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
-  gap: 10px;
-  padding: 0;
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  gap: 15px; /* Espaciado uniforme entre elementos */
+  margin-top: 40px;
   list-style: none;
 }
 
 .benefit-item {
-  padding: 15px;
-  width: calc(20% - 10px); 
+  padding: 20px;
+  width: 250px; /* Tamaño fijo de las tarjetas */
   box-sizing: border-box;
   text-align: center;
+  background: #ffffff; /* Fondo blanco para los ítems */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-item:hover {
+  transform: translateY(-5px); /* Eleva el ítem al pasar el mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
 }
 
 .benefit-icon {
-  width: 130px;
+  width: 100px; /* Ajustado para una mejor presentación */
   height: auto;
   margin-bottom: 10px;
   opacity: 0;
@@ -83,26 +92,20 @@
 
 .benefit-item-text {
   display: block;
-  font-size: 1rem;
-  color: black;
+  font-size: 1.2rem;
+  color: rgb(217, 156, 1);
+  margin-top: 10px;
 }
 
+/* Estilos responsive */
 @media (max-width: 768px) {
   .benefit-item {
-    width: calc(33.333% - 10px); 
+    width: 200px; /* Ajusta el ancho de las tarjetas en pantallas medianas */
   }
 }
 
 @media (max-width: 480px) {
-  .title-container {
-    margin-top: 2em;
-  }
-
-  .benefits-title {
-    font-size: 1.8rem;
-  }
-
   .benefit-item {
-    width: calc(50% - 10px); 
+    width: 150px; /* Ajusta el ancho de las tarjetas en pantallas pequeñas */
   }
 }
