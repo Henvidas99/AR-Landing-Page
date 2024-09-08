@@ -1,4 +1,4 @@
-// src/components/Footer.js
+
 import React, { useEffect } from 'react';
 import './Footer.css';
 import { IonIcon } from '@ionic/react';
@@ -8,19 +8,16 @@ import alienLogo from '../../assets/images/logo-alien-realty.png';
 
 const Footer = () => {
   useEffect(() => {
-    // Selecciona los elementos a observar
     const elementsToObserve = [
       document.querySelector('.footer-logo'),
       document.querySelector('.footer-info'),
       document.querySelector('.footer-socials')
     ];
 
-    // Crea el IntersectionObserver
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
-          // Desactiva el observer después de la primera vez
           observer.unobserve(entry.target);
         }
       });
@@ -28,14 +25,12 @@ const Footer = () => {
       threshold: 0.5
     });
 
-    // Observa los elementos seleccionados
     elementsToObserve.forEach(element => {
       if (element) {
         observer.observe(element);
       }
     });
 
-    // Limpieza del observer al desmontar el componente
     return () => {
       elementsToObserve.forEach(element => {
         if (element) {
@@ -64,6 +59,7 @@ const Footer = () => {
             <h3>Costa Rica</h3>
           </div>
           <div>
+            <a href="mailto:soporte@orbitacr.com">alien@orbitacr.net</a>
             <a href="mailto:soporte@orbitacr.com">soporte@orbitacr.com</a>
             <a href="mailto:contact@orbitacr.com">contact@orbitacr.com</a>
           </div>

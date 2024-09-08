@@ -1,32 +1,26 @@
 .benefits-section {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column; /* Asegura que el contenido se apile verticalmente */
+  align-items: center; /* Centra el contenido horizontalmente */
+  justify-content: flex-start; /* Alinea el contenido al principio */
   height: auto;
   background-color: whitesmoke;
-  position: relative; /* Necesario para aplicar el box-shadow de manera efectiva */
+  position: relative; 
+  padding-top: 20px; /* Ajuste de padding para empujar el título más arriba */
 }
-
 
 .ufo-content {
-  background-color: rgb(237, 237, 237); /* Color de fondo más claro para el contenido */
   width: 100%;
-  height: 400px;
-  padding: 20px;
-  text-align: center;
-  position: relative;
-}
-
-.title-container {
-  margin-bottom: 1em;
+  height: auto;
+  
 }
 
 .benefits-title {
   font-size: 2rem;
   margin-bottom: 20px;
   color: forestgreen;
-  opacity: 0; /* Inicialmente oculto */
-  transform: translateY(20px); /* Inicialmente desplazado hacia abajo */
+  opacity: 0; 
+  transform: translateY(20px); 
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
@@ -34,29 +28,30 @@
   display: flex;
   flex-wrap: wrap; 
   justify-content: space-around; 
-  gap: 15px; /* Espaciado uniforme entre elementos */
-  margin-top: 40px;
+  gap: 15px; 
+  margin-top: 20px; /* Reduce el margen superior para que el contenido esté más cerca del título */
   list-style: none;
+  padding: 40px;
 }
 
 .benefit-item {
   padding: 20px;
-  width: 250px; /* Tamaño fijo de las tarjetas */
+  width: 250px; 
   box-sizing: border-box;
   text-align: center;
-  background: #ffffff; /* Fondo blanco para los ítems */
-  border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+  background: #ffffff; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .benefit-item:hover {
-  transform: translateY(-5px); /* Eleva el ítem al pasar el mouse */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 .benefit-icon {
-  width: 100px; /* Ajustado para una mejor presentación */
+  width: 100px; 
   height: auto;
   margin-bottom: 10px;
   opacity: 0;
@@ -97,15 +92,14 @@
   margin-top: 10px;
 }
 
-/* Estilos responsive */
 @media (max-width: 768px) {
   .benefit-item {
-    width: 200px; /* Ajusta el ancho de las tarjetas en pantallas medianas */
+    width: 200px; 
   }
 }
 
 @media (max-width: 480px) {
   .benefit-item {
-    width: 150px; /* Ajusta el ancho de las tarjetas en pantallas pequeñas */
+    width: 150px;
   }
 }

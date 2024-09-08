@@ -147,7 +147,6 @@
   }
 }
 
-/* Animaciones de deslizamiento hacia arriba */
 @keyframes slideUp {
   from {
     opacity: 0;
@@ -159,17 +158,16 @@
   }
 }
 
-/* Clase para aplicar animación */
 .visible {
   animation: slideUp 0.8s ease-out forwards;
 }
 
-/* Inicialmente ocultar los elementos para la animación */
+
 .explore-properties-brokers-section h2,
 .explore-properties-brokers-section p,
 .explore-properties-brokers-section .properties-section,
 .explore-properties-brokers-section .brokers-section,
 .explore-properties-brokers-section .property-carousel,
 .explore-properties-brokers-section .map-section {
-  opacity: 0; /* Oculto para la animación */
+  opacity: 0; 
 }

@@ -9,6 +9,7 @@ import brokerImg from '../../../assets/images/broker2.png';
 import crmImg from '../../../assets/images/crm.png';
 import citasImg from '../../../assets/images/schedule.png';
 import listImg from '../../../assets/images/list.png';
+import securityImg from '../../../assets/images/property-security2.png';
 
 const modules = [
   {
@@ -33,8 +34,13 @@ const modules = [
   },
   {
     title: 'Listado de Propiedades',
-    description: 'Explora y gestiona la publicación y actualización de propiedades en venta o alquiler ',
+    description: 'Explora y gestiona la publicación y actualización de propiedades en venta o alquiler. ',
     imgSrc: listImg
+  },
+  {
+    title: 'Seguridad de Propiedades',
+    description: 'Garantiza la seguridad de tus propiedades con el avanzado servicio de protección que nuestra aplicación pone a tu disposición',
+    imgSrc: securityImg
   }
 ];
 
@@ -48,11 +54,10 @@ const ModulesSection = () => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          // Activar animación de todos los elementos internos
           h2.classList.add('visible');
           setTimeout(() => p.classList.add('visible'), 200);
           setTimeout(() => carouselContainer.classList.add('visible'), 400);
-          observer.unobserve(entry.target); // Solo se activa la animación una vez
+          observer.unobserve(entry.target); 
         }
       });
     }, {

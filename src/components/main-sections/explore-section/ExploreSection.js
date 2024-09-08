@@ -101,7 +101,6 @@ const ExploreSection = () => {
     });
 
     return () => {
-      // Clean up the observer on unmount
       icons.forEach(icon => {
         observer.unobserve(icon);
       });

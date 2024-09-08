@@ -13,7 +13,7 @@ const benefits = [
     icon: efficiencyIcon
   },
   {
-    title: 'Seguridad de la Información',
+    title: 'Seguridad de las Propiedades',
     description: 'Protege datos sensibles y transacciones.',
     icon: securityIcon
   },
@@ -53,7 +53,6 @@ const BenefitsSection = () => {
     });
 
     return () => {
-      // Clean up the observer on unmount
       icons.forEach(icon => {
         observer.unobserve(icon);
       });
@@ -77,6 +76,7 @@ const BenefitsSection = () => {
       </div>
     </section>
   );
+  
 };
 
 export default BenefitsSection;

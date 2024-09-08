@@ -1,4 +1,4 @@
-/* Sección de módulos */
+
 .modules-section {
   padding: 10px 20px;
   background-color: #fdf7e0;
@@ -10,37 +10,33 @@
   margin: 0 auto;
 }
 
-/* Estilo para el título */
 .modules-section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
   color: forestgreen;
-  opacity: 0; /* Inicialmente oculto */
-  transform: translateY(20px); /* Inicialmente desplazado hacia abajo */
+  opacity: 0; 
+  transform: translateY(20px); 
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-/* Estilo para el párrafo */
 .modules-section .subtitle {
   font-size: 1.2rem;
   margin-bottom: 40px;
-  opacity: 0; /* Inicialmente oculto */
-  transform: translateY(20px); /* Inicialmente desplazado hacia abajo */
+  opacity: 0; 
+  transform: translateY(20px); 
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  transition-delay: 0.2s; /* Aparece después del h2 */
+  transition-delay: 0.2s; 
 }
 
-/* Estilo para el contenedor del carrusel */
 .carousel-container {
   padding: 10px 20px 50px;
   position: relative;
-  opacity: 0; /* Inicialmente oculto */
-  transform: translateY(20px); /* Inicialmente desplazado hacia abajo */
+  opacity: 0; 
+  transform: translateY(20px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  transition-delay: 0.8s; /* Aparece después del h2 y el párrafo */
+  transition-delay: 0.8s; 
 }
 
-/* Animación de los elementos visibles */
 .modules-section h2.visible {
   opacity: 1;
   transform: translateY(0);
@@ -56,7 +52,6 @@
   transform: translateY(0);
 }
 
-/* Estilos del carrusel */
 .module-carousel {
   padding: 0 20px;
 }
@@ -76,17 +71,15 @@
 }
 
 .swiper-slide .module-card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el ratón */
-  transform: translateY(-8px); /* Eleva la carta al pasar el ratón */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-8px); 
 }
 
-/* Estilos de los botones de navegación del carrusel */
 .swiper-button-next,
 .swiper-button-prev {
   color: #000; 
 }
 
-/* Opcional: Estilo para los puntos de paginación del carrusel */
 .swiper-pagination-bullet {
   background: #000;
 }

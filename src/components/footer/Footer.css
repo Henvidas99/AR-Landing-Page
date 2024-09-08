@@ -19,16 +19,16 @@
   .footer-logo,
   .footer-info,
   .footer-socials {
-    opacity: 0; /* Inicialmente oculto */
-    transform: translateX(-20px); /* Inicialmente desplazado a la izquierda */
+    opacity: 0; 
+    transform: translateX(-20px); 
     transition: opacity 1s ease, transform 1s ease;
   }
   
   .footer-logo.visible,
   .footer-info.visible,
   .footer-socials.visible {
-    opacity: 1; /* Visibilidad completa */
-    transform: translateX(0); /* Posición final */
+    opacity: 1; 
+    transform: translateX(0); 
   }
   
   .footer-logo img {

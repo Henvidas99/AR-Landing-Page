@@ -2,8 +2,8 @@ import React from 'react';
 import './DownloadSection.css';
 import androidIcon from '../../../assets/images/android1.png';
 import iosIcon from '../../../assets/images/ios.png';
-import phoneImageLeft from '../../../assets/images/mobile3.png'; // Imagen del teléfono izquierdo
-import phoneImageRight from '../../../assets/images/mobile4.png'; // Imagen del teléfono derecho
+import phoneImageLeft from '../../../assets/images/mobile3.png'; 
+import phoneImageRight from '../../../assets/images/mobile4.png'; 
 
 const DownloadSection = () => {
   return (

@@ -59,7 +59,7 @@
 .phone-image {
   position: absolute;
   width: 300px;
-  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4)), brightness(1.1); /* Agrega brillo y sombra */
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4)), brightness(1.1); 
   z-index: 0;
   animation: float 10s ease-in-out infinite, glow 1.5s infinite alternate;
 }
@@ -81,7 +81,7 @@
     transform: translateY(0) rotate(0deg);
   }
   50% {
-    transform: translateY(-20px) rotate(-5deg); /* Rotar cuando esté en la parte superior */
+    transform: translateY(-20px) rotate(-5deg);
   }
 }
 
@@ -90,16 +90,16 @@
     transform: translateY(0) rotate(0deg);
   }
   50% {
-    transform: translateY(-20px) rotate(5deg); /* Rotar cuando esté en la parte superior */
+    transform: translateY(-20px) rotate(5deg);
   }
 }
 
 @keyframes glow {
   0% {
-    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.6)); /* Menos brillo inicial */
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.6)); 
   }
   100% {
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)); /* Brillo más intenso final */
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)); 
   }
 }
 
