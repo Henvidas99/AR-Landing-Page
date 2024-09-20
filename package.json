@@ -23,7 +23,7 @@
     "swiper": "^11.1.8",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "http://alien.orbitascr.com/",
+  "homepage": "http://alienrealty.orbitascr.com/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

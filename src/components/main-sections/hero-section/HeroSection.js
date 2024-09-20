@@ -47,7 +47,7 @@ const HeroSection = () => {
       const nextIndex = (currentVideoIndex + 1) % videos.length;
       setCurrentVideoIndex(nextIndex);
       setIsVideoPlaying(true);
-    }, 10000); // Pausa durante 10 segundos
+    }, 60000); // Pausa durante 60 segundos
   };
 
   useEffect(() => {
@@ -59,7 +59,7 @@ const HeroSection = () => {
           setIsVideoPlaying(false);
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 } // Ajusta el umbral para que se active antes
     );
 
     if (containerRef.current) {
@@ -77,7 +77,6 @@ const HeroSection = () => {
     <div id="hero" className="hero-section" ref={containerRef}>
       <video
         ref={videoRef}
-        autoPlay
         className={`hero-video ${isVideoPlaying ? 'visible' : 'hidden'}`}
         muted
         playsInline

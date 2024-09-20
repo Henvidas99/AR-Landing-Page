@@ -10,6 +10,10 @@ import crmImg from '../../../assets/images/crm.png';
 import citasImg from '../../../assets/images/schedule.png';
 import listImg from '../../../assets/images/list.png';
 import securityImg from '../../../assets/images/property-security2.png';
+import contractImg from '../../../assets/images/contract.png';
+import blackListImg from '../../../assets/images/blacklist.png';
+import creditImg from '../../../assets/images/credit.png';
+import paymentImg from '../../../assets/images/payment2.png';
 
 const modules = [
   {
@@ -41,7 +45,28 @@ const modules = [
     title: 'Seguridad de Propiedades',
     description: 'Garantiza la seguridad de tus propiedades con el avanzado servicio de protección que nuestra aplicación pone a tu disposición',
     imgSrc: securityImg
-  }
+  },
+  {
+    title: 'Análisis Crediticio',
+    description: 'Evalúa la capacidad financiera del comprador, generando una precalificación crediticia de una institución bancaria.',
+    imgSrc: creditImg
+  },
+  {
+    title: 'Lista Negra',
+    description: 'Gestiona una lista negra de inquilinos y propietarios, mejorando el control y la seguridad en tus transacciones.',
+    imgSrc: blackListImg
+  },
+  {
+    title: 'Control de Contratos',
+    description: 'Genera contratos seguros y formales para tus clientes, con control de fechas de ingreso y firma digital certificada.',
+    imgSrc: contractImg
+  },
+  {
+    title: 'Integración de Pagos',
+    description: 'Realiza pagos de manera segura y directa a través de nuestra plataforma, simplificando transacciones con brokers y clientes.',
+    imgSrc: paymentImg
+  },
+
 ];
 
 const ModulesSection = () => {

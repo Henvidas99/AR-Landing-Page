@@ -77,9 +77,9 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: #000; 
+  color: rgb(217, 156, 1);
 }
 
 .swiper-pagination-bullet {
-  background: #000;
+  background: rgb(217, 156, 1);
 }
