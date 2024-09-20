@@ -1,12 +1,12 @@
 .benefits-section {
   display: flex;
-  flex-direction: column; /* Asegura que el contenido se apile verticalmente */
-  align-items: center; /* Centra el contenido horizontalmente */
-  justify-content: flex-start; /* Alinea el contenido al principio */
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: flex-start; 
   height: auto;
   background-color: whitesmoke;
   position: relative; 
-  padding-top: 20px; /* Ajuste de padding para empujar el título más arriba */
+  padding-top: 20px;
 }
 
 .ufo-content {
@@ -29,7 +29,7 @@
   flex-wrap: wrap; 
   justify-content: space-around; 
   gap: 15px; 
-  margin-top: 20px; /* Reduce el margen superior para que el contenido esté más cerca del título */
+  margin-top: 20px;
   list-style: none;
   padding: 40px;
 }

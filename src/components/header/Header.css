@@ -86,7 +86,7 @@
 .navbar-buttons {
   display: flex;
   gap: 10px;
-  font-size: 16px; /* Ajusta el tamaño de la fuente */
+  font-size: 16px; 
   font-weight: 500;
   padding: 0px;
   opacity: 0;
